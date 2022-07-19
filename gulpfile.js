@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const cleanCSS = require('gulp-clean-css');
 const browserSync = require('browser-sync').create();
 
 // Compile Sass to CSS function
@@ -10,6 +11,16 @@ function compiler() {
 
     // Compile SCSS to CSS
     .pipe(sass().on('error', sass.logError))
+
+    // Minify the CSS
+    .pipe(cleanCSS(
+        {
+            compatibility: '*', // (default) - Internet Explorer 10+ compatibility mode
+            debug: true
+        }, (details) => {
+        console.log(`${details.name}: ${details.stats.originalSize} (unmin)`);
+        console.log(`${details.name}: ${details.stats.minifiedSize} (min)`);
+    }))
 
     // Save the CSS
     .pipe(gulp.dest('./css'))
