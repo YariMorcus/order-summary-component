@@ -51,26 +51,29 @@ $dark-blue:hsl(223, 47%, 23%);
 3. [VARIABLES] Typography
 */
 
+// Font family: Red Hat Display, font-weight: black
 @font-face {
     font-family: 'red hat display';
     src: url('../fonts/redhatdisplay-black.woff2') format('woff2'),
-        url('../fonts/redhatdisplay-black.woff') format('woff'),
-        url('../fonts/redhatdisplay-black.ttf') format('truetype');
+    url('../fonts/redhatdisplay-black.woff') format('woff'),
+    url('../fonts/redhatdisplay-black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
+// Font family: Red Hat Display, font-weight: bold
 @font-face {
     font-family: 'red hat display';
     src: url('../fonts/redhatdisplay-bold.woff2') format('woff2'),
-        url('../fonts/redhatdisplay-bold.woff') format('woff'),
-        url('../fonts/redhatdisplay-bold.ttf') format('truetype');
+    url('../fonts/redhatdisplay-bold.woff') format('woff'),
+    url('../fonts/redhatdisplay-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
+// Font family: Red Hat Display, font-weight: medium
 @font-face {
     font-family: 'red hat display';
     src: url('../fonts/redhatdisplay-medium.woff2') format('woff2'),
@@ -80,6 +83,9 @@ $dark-blue:hsl(223, 47%, 23%);
     font-style: normal;
     font-display: swap;
 }
+
+// Body copy
+$font-size-paragraph: 1.6rem; // 16 pixels
 
 /*------------------------------------------------------------------
 8. Footer
