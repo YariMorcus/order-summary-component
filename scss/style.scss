@@ -21,81 +21,14 @@ Primary use:    Portfolio project
     7. Content
     8. Footer
     9. Media queries
-    -------------------------------------------------------------------*/
+-------------------------------------------------------------------*/
 
-/*------------------------------------------------------------------
-1. [VARIABLES] Colors
-    1.1 Primary
-*/
-
-$pale-blue: hsl(225, 100%, 94%);
-$bright-blue: hsl(245, 75%, 52%);
-
-/*------------------------------------------------------------------
-1. [VARIABLES] Colors
-    1.2 Neutral
-*/
-
-$very-pale-blue: hsl(225, 100%, 98%);
-$desaturated-blue: hsl(224, 23%, 55%);
-$dark-blue:hsl(223, 47%, 23%);
-
-/*------------------------------------------------------------------
-1. [VARIABLES] Colors
-    1.3 Link states
-*/
+@use "modules/global";
 
 
-
-/*------------------------------------------------------------------
-3. [VARIABLES] Typography
-*/
-
-// Font family: Red Hat Display, font-weight: black
-@font-face {
-    font-family: 'red hat display';
-    src: url('../fonts/redhatdisplay-black.woff2') format('woff2'),
-    url('../fonts/redhatdisplay-black.woff') format('woff'),
-    url('../fonts/redhatdisplay-black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-// Font family: Red Hat Display, font-weight: bold
-@font-face {
-    font-family: 'red hat display';
-    src: url('../fonts/redhatdisplay-bold.woff2') format('woff2'),
-    url('../fonts/redhatdisplay-bold.woff') format('woff'),
-    url('../fonts/redhatdisplay-bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-// Font family: Red Hat Display, font-weight: medium
-@font-face {
-    font-family: 'red hat display';
-    src: url('../fonts/redhatdisplay-medium.woff2') format('woff2'),
-        url('../fonts/redhatdisplay-medium.woff') format('woff'),
-        url('../fonts/redhatdisplay-medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-// Body copy
-$font-size-paragraph: 1.6rem; // 16 pixels
 
 /*------------------------------------------------------------------
 8. Footer
 */
+@use "modules/footer";
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
