@@ -21,8 +21,8 @@
 
     <article class="order-card">
       <header class="order-card__header">
-        <img class="img" src="img/illustration-hero.svg" alt="">
-        <h1>Order Summary</h1>
+        <img class="img order-card__img" src="img/illustration-hero.svg" alt="">
+        <h1 class="order-card__title">Order Summary</h1>
       </header> <!-- .order-card__header -->
 
       <p class="order-card__content">You can now listen to millions of songs, audiobooks, and podcasts on any 
@@ -30,18 +30,18 @@
       </p> <!-- .order-card__content -->
 
       <div class="order-card__subscription"> <!-- becomes grid container -->
-        <img class="img" src="img/icon-music.png" srcset="img/icon-music.svg" alt="">
-        <div> <!-- becomes flex container with justify-content space-between -->
+        <img class="img order-card__icon" src="img/icon-music.png" srcset="img/icon-music.svg" alt="">
+        <div class="order-card__plan-container"> <!-- becomes flex container with justify-content space-between -->
           <div>
-            <span class="bold-text">Annual Plan</span>
-            <span class="order-price">$59.99/year</span>
+            <span class="order-card__plan order-card__plan--selected">Annual Plan</span>
+            <span class="order-card__price">$59.99/year</span>
           </div>
           <button>Change</button>
-        </div>
+        </div> <!-- .order-card__plan-container -->
       </div> <!-- .order-card__subscription -->
 
-      <button class="order-card__button">Proceed to Payment</button>
-      <button class="order-card__button">Cancel Order</button>
+      <button class="order-card__button-proceed">Proceed to Payment</button>
+      <button class="order-card__button-cancel">Cancel Order</button>
 
     </article> <!-- .order-card -->
 
