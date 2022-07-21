@@ -19,18 +19,18 @@
 
   <main>
 
-    <article>
-      <header>
-        <img src="img/illustration-hero.svg" alt="">
+    <article class="order-card">
+      <header class="order-card__header">
+        <img class="img" src="img/illustration-hero.svg" alt="">
         <h1>Order Summary</h1>
-      </header>
+      </header> <!-- .order-card__header -->
 
-      <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+      <p class="order-card__content">You can now listen to millions of songs, audiobooks, and podcasts on any 
         device anywhere you like!
-      </p>
+      </p> <!-- .order-card__content -->
 
-      <div> <!-- becomes grid container -->
-        <img src="img/icon-music.png" srcset="img/icon-music.svg" alt="">
+      <div class="order-card__subscription"> <!-- becomes grid container -->
+        <img class="img" src="img/icon-music.png" srcset="img/icon-music.svg" alt="">
         <div> <!-- becomes flex container with justify-content space-between -->
           <div>
             <span class="bold-text">Annual Plan</span>
@@ -38,18 +38,18 @@
           </div>
           <button>Change</button>
         </div>
-      </div>
+      </div> <!-- .order-card__subscription -->
 
-      <button>Proceed to Payment</button>
-      <button>Cancel Order</button>
+      <button class="order-card__button">Proceed to Payment</button>
+      <button class="order-card__button">Cancel Order</button>
 
-    </article>
+    </article> <!-- .order-card -->
 
   </main>
 
-  <footer class="attribution">
-    Challenge by <a class="attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded&nbsp;by&nbsp;<a class="attribution-link" href="https://www.linkedin.com/in/yarimorcus" target="_blank">Yari&nbsp;Morcus</a>.
-  </footer> <!-- .attribution -->
+  <footer class="footer">
+    Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded&nbsp;by&nbsp;<a class="footer__link" href="https://www.linkedin.com/in/yarimorcus" target="_blank">Yari&nbsp;Morcus</a>.
+  </footer> <!-- .footer -->
 </body>
 </html>
