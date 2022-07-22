@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------
+[Main Stylesheet]
+Project:    Order summary component
+Version:    1.0
+Assigned to:    Yari Morcus
+Primary use:    Portfolio project 
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+    1. [VARIABLES] Colors
+        1.1 Primary
+        1.2 Neutral
+        1.3 Link states
+    2. Import media query module
+    3. [VARIABLES] Typography
+    4. Global
+    5. Product card preview component
+    6. Header
+        6.1 Headings
+    7. Content
+    8. Footer
+    9. Media queries
+-------------------------------------------------------------------*/
+
+@use "modules/global";
+
+@use "modules/utility";
+
+@use "modules/_order-card";
+
+/*------------------------------------------------------------------
+8. Footer
+*/
+@use "modules/footer";
+

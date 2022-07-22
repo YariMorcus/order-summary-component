@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="An order summary component made by Yari Morcus. A challenge from Frontend Mentor">
+  <meta name="keywords" content="frontendmentor frontend yarimorcus yari morcus coding challenge order summary component">
+  <meta name="author" content="Yari Morcus">
 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
   
-  <title>Page title</title>
+  <title>Order summary component | Frontend Mentor</title>
+
 </head>
 <body>
 
+  <main>
+
+    <article class="order-card">
+      <header class="order-card__header">
+        <img class="img order-card__img" src="img/illustration-hero.svg" alt="">
+        <h1 class="order-card__title font-black">Order Summary</h1>
+      </header> <!-- .order-card__header -->
+
+      <p class="order-card__content font-medium font-desaturated">You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+      </p> <!-- .order-card__content -->
+
+      <div class="order-card__subscription">
+        <img class="img order-card__icon" src="img/icon-music.png" srcset="img/icon-music.svg" alt="">
+        <div class="order-card__plan-container">
+          <div class="order-card__plan-price-container">
+            <span class="order-card__plan order-card__plan--selected font-bold">Annual Plan</span>
+            <span class="order-card__price font-medium font-desaturated">$59.99/year</span>
+          </div> <!-- .order-card__plan-price-container -->
+          <button class="order-card__button-change font-bold">Change</button>
+        </div> <!-- .order-card__plan-container -->
+      </div> <!-- .order-card__subscription -->
+
+      <div class="order-card__button-container">
+        <button class="order-card__button-proceed font-bold">Proceed to Payment</button>
+        <button class="order-card__button-cancel font-bold font-desaturated">Cancel Order</button>
+      </div> <!-- .order-card__button-container -->
+
+    </article> <!-- .order-card -->
+
+  </main>
+
+  <footer class="footer">
+    Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded&nbsp;by&nbsp;<a class="footer__link" href="https://www.linkedin.com/in/yarimorcus" target="_blank">Yari&nbsp;Morcus</a>.
+  </footer> <!-- .footer -->
 </body>
 </html>
