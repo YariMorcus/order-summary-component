@@ -1,4 +1,4 @@
-@use "variables";
+@use "variables" as variable;
 @use "typography";
 
 *,
@@ -19,6 +19,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    background-color: variable.$pale-blue;
 }
 
 main {
