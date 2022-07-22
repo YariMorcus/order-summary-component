@@ -1,0 +1,20 @@
+@use "variables" as variable;
+
+.font-medium {
+    font-family: 'red hat display', sans-serif;
+    font-weight: 500;
+}
+
+.font-bold {
+    font-family: 'red hat display', sans-serif;
+    font-weight: 700;
+}
+
+.font-black {
+    font-family: 'red hat display', sans-serif;
+    font-weight: 900;
+}
+
+.font-desaturated {
+    color: variable.$desaturated-blue;
+}
