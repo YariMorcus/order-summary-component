@@ -1,5 +1,6 @@
 @use "variables" as variable;
 @use "typography";
+@use "media-queries" as query;
 
 *,
 *::before,
@@ -20,6 +21,10 @@ body {
     padding: 0;
     min-height: 100vh;
     background: url("../img/pattern-background-mobile.svg") right 0 top 130px repeat-x variable.$pale-blue;
+    
+    @include query.min-width-tablet() {
+        background: url(../img/pattern-background-desktop.svg) left top -10rem repeat-x hsl(225deg,100%,94%);
+    }
 }
 
 main {
