@@ -72,6 +72,11 @@
         text-decoration: underline;
         background-color: initial;
         border: none;
+
+        &:hover {
+            cursor: pointer;
+            color: variable.$hover-state-color;
+        }
     }
 
     &__button-container {     
