@@ -74,7 +74,6 @@
         border: none;
 
         &:hover {
-            cursor: pointer;
             color: variable.$hover-state-color;
         }
     }
@@ -105,6 +104,10 @@
         @include query.min-width-tablet() {
             margin-bottom: 3rem;
         }
+
+        &:hover {
+            background-color: variable.$hover-state-color;
+        }
     }
 
     &__button-cancel {
@@ -117,9 +120,19 @@
         border: none;
         background-color: initial;
 
+        &:hover {
+            color: variable.$dark-blue;
+        }
+
         @include query.min-width-tablet() {
             margin-bottom: 4rem;
         }
+    }
+
+    &__button-change:hover,
+    &__button-proceed:hover,
+    &__button-cancel:hover {
+        cursor: pointer;
     }
 
     @include query.min-width-367px() {
