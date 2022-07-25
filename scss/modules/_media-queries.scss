@@ -1,0 +1,11 @@
+@mixin min-width-367px() {
+    @media (min-width: 376px) {
+        @content;
+    }
+}
+
+@mixin min-width-tablet() {
+    @media (min-width: 767px) {
+        @content;
+    }
+}

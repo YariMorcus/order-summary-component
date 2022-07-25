@@ -3,7 +3,10 @@
 */
 
 .footer { 
-    font-size: 11px; 
+    padding: 0 1.28rem 1.28rem;
+    font-family: 'red hat display', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem; 
     text-align: center; 
 
     &__link {
