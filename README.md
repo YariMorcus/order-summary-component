@@ -35,7 +35,7 @@ The users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS _(BEM naming convention used)_
+- CSS _(BEM naming convention used, [see getbem.com](http://getbem.com) for more information)_
 - Flexbox
 - Grid
 - Mobile-first workflow
