@@ -16,7 +16,7 @@
     }
 
     &__title {
-        margin-top: 4rem;
+        margin-top: 3rem;
         color: variable.$dark-blue;
         font-size: 2.35rem;
         text-align: center;
@@ -125,7 +125,7 @@
         }
 
         @include query.min-width-tablet() {
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
         }
     }
 
